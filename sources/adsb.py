@@ -26,6 +26,7 @@ def aircraft_by_callsign(callsign):
     """
     Gets aircraft by callsigh
     """
+    callsign = callsign.strip().upper()
     url = f"{BASE_URL}/v2/callsign/{callsign}"
 
     response = requests.get(url, timeout=TIMEOUT_SECONDS)
