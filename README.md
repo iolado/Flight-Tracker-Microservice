@@ -5,8 +5,7 @@ A Python microservice for CS 361 that looks up live aircraft data from the free
 
 ## Status
 
-🚧 **In progress.** The code that fetches data from adsb.lol works. The Flask HTTP layer that
-exposes it as a microservice has not been built yet.
+Implemented. The Flask service exposes live aircraft lookups by location and callsign, plus a health check.
 
 ## What's done
 
@@ -125,7 +124,7 @@ aggregator. No API key is required.
 ## Communication Contract
 
 ## Purpose
-An HTTP/JSON microservice for **current ADS-B aircraft positions**, backed by adsb.lol. This is not an airline booking or scheduled-flight API. It does not provide guaranteed arrival times, departure schedules, gates, or cancellation statuses.
+An HTTP/JSON microservice for current ADS-B aircraft positions, backed by adsb.lol. The data describes aircraft positions and onboard ADS-B reports.
 
 ## Start the service
 Python 3.10+ is required.
